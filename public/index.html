@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TitanFuel Nutrition</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+
+</head>
+<body>
+
+<!-- Header / NAV -->
+<header class="site-header">
+  <nav class="nav-shell">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="#" class="brand">TitanFuel</a>
+    <img src="media/Codelli_Logo_J-6-removebg-preview.png" alt="Codelli Logo" class="codelli-logo">
+    <ul class="nav-list" id="nav-list">
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="pricing.html" class="cta">Shop Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- HERO -->
+  <main>
+    <section class="hero" role="region" aria-label="Hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">Unleash Your Potential</h1>
+        <p class="hero-sub">Fuel your performance with clean, science-backed supplements built for champions.</p>
+        <div class="hero-cta">
+          <a href="pricing.html" class="btn btn-primary">Explore Products</a>
+          <a href="#about" class="btn btn-ghost">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2>About TitanFuel</h2>
+            <p>
+              At TitanFuel, we believe true power starts from within. Our mission is to deliver premium supplements
+              that empower athletes to train harder, recover faster and perform consistently.
+            </p>
+            <ul class="about-features">
+              <li>🔬 Science-backed formulas</li>
+              <li>🌱 Clean, traceable ingredients</li>
+              <li>♻️ Sustainable packaging</li>
+            </ul>
+          </div>
+          <figure class="about-media" aria-hidden="true">
+            <img src="media/heroimage.jpeg" alt="Athlete training" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS / COUNTER SECTION -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat-card">
+      <h3 class="stat-number" data-target="1000">0</h3>
+      <p>Happy Customers</p>
+    </div>
+    <div class="stat-card">
+      <h3 class="stat-number" data-target="50">0</h3>
+      <p>Products Available</p>
+    </div>
+    <div class="stat-card">
+      <h3 class="stat-number" data-target="20">0</h3>
+      <p>Countries Shipped</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCROLL PROGRESS BAR -->
+<div id="scroll-progress"></div>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2>What Athletes Say</h2>
+        <div class="test-grid">
+          <blockquote class="test-card"> 
+            <p>“TitanFuel changed the way I train — more energy and faster recovery.”</p>
+            <footer>— Alex M., Trainer</footer>
+          </blockquote>
+          <blockquote class="test-card">
+            <p>“No crash, real results. My go-to supplement.”</p>
+            <footer>— Sarah K., Marathoner</footer>
+          </blockquote>
+          <blockquote class="test-card">
+            <p>“High-quality ingredients and taste — great product.”</p>
+            <footer>— Mike L., Bodybuilder</footer>
+          </blockquote>
+          <blockquote class="test-card">
+            <p>“Consistent performance every session — love it.”</p>
+            <footer>— Emma R., Athlete</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h2>TitanFuel</h2>
+      <p>Fuel your training, power your goals.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Testimonials</a>
+    </div>
+
+    <div class="footer-socials">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 TitanFuel. All rights reserved.</p>
+  </div>
+</footer>
+
+            <!-- Chatbot Floating Button and Window -->
+    <div id="chatbot-container">
+        <button id="chatbot-button">💬</button>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">
+                <span>TitanFuel AI Assistant</span>
+                <button id="close-chat">✖</button>
+            </div>
+            <div id="chatbot-messages"></div>
+            <div id="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Type a message...">
+                <button id="send-message">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

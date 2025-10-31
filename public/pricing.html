@@ -1,0 +1,164 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | TitanFuel</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pricing.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+
+    <!-- Header / NAV -->
+    <header class="site-header">
+    <nav class="nav-shell">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+        <a href="#" class="brand">TitanFuel</a>
+        <img src="media/Codelli_Logo_J-6-removebg-preview.png" alt="Codelli Logo" class="codelli-logo">
+        <ul class="nav-list" id="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="#filter" class="nav-link">Products</a></li>
+        <li><a href="#tips" class="nav-link">Tips</a></li>
+        <li><a href="https://wa.me/" class="cta" target="_blank">Let's Chat</a></li>
+        </ul>
+    </nav>
+    </header>
+
+<!-- ===== HERO / BANNER ===== -->
+<section class="products-hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="media/herovideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container hero-content">
+        <h1 class="hero-title">Our Products</h1>
+        <p class="hero-sub">Explore our premium supplements designed to fuel your best performance.</p>
+    </div>
+</section>
+
+
+    <!-- ===== FILTER BAR ===== -->
+    <section id="filter" class="filter-bar container">
+        <div class="filter-group">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option>All</option>
+            <option>Protein</option>
+            <option>Pre-Workout</option>
+            <option>Vitamins</option>
+            <option>Energy</option>
+        </select>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS GRID ===== -->
+    <section class="products container">
+        <div class="product-grid" id="product-grid">
+        <!-- Products will be dynamically inserted here from JavaScript (Index.js) -->
+        </div>
+    </section>
+
+    <!-- ===== RECOMMENDATIONS ===== -->
+    <section class="recomendations">
+    <div class="container">
+        <h2>Recommended</h2>
+        <div class="rec-grid">
+        <div class="rec-card">
+            <img src="media/Products-Media/massgainer.jpg" alt="Mass Gainer">
+            <h4>Mass Gainer Pro</h4>
+            <span>$44.99</span>
+        </div>
+
+        <div class="rec-card">
+            <img src="media/Products-Media/creatine.jpg" alt="Creatine">
+            <h4>Creatine Monohydrate</h4>
+            <span>$22.99</span>
+        </div>
+
+        <div class="rec-card">
+            <img src="media/Products-Media/omega3.jpg" alt="Omega 3">
+            <h4>Omega 3 Capsules</h4>
+            <span>$18.99</span>
+        </div>
+        </div>
+    </div>
+    </section>
+
+        <!-- ===== TIPS & GUIDES ===== -->
+    <section id="tips" class="tips-guides">
+    <div class="container">
+        <h2>Training & Nutrition Tips</h2>  
+        <div class="tips-grid">
+        <div class="tip-card">
+            <img src="media/Tips Media/post workout meal.jpeg" alt="Post-Workout Nutrition">
+            <h4>Post-Workout Nutrition</h4>
+            <p>Learn how to recover faster and build muscle effectively. Eating the right combination of protein and carbs within 30 minutes after training can dramatically improve muscle repair and growth.</p>
+        </div>
+        <div class="tip-card">
+            <img src="media/Tips Media/pre workout.jpeg" alt="Pre-Workout Meals">
+            <h4>Pre-Workout Meals</h4>
+            <p>Fuel your sessions with the right meals to boost performance. Focus on complex carbs and moderate protein to keep energy stable and avoid feeling sluggish during your workout.</p>
+        </div>
+        <div class="tip-card">
+            <img src="media/Tips Media/hydratation.jpeg" alt="Hydration Tips">
+            <h4>Hydration Tips</h4>
+            <p>Keep your body at peak performance with smart hydration strategies. Drinking water consistently throughout the day is better than trying to catch up during workouts. Add electrolytes if you sweat heavily.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- SCROLL PROGRESS BAR -->
+    <div id="scroll-progress"></div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-content">
+        <div class="footer-brand">
+            <h2>TitanFuel</h2>
+            <p>Fuel your training, power your goals.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Testimonials</a>
+        </div>
+
+        <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        </div>
+
+        <div class="footer-bottom">
+        <p>© 2025 TitanFuel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Floating Button -->
+    <div id="chatbot-container">
+        <button id="chatbot-button">💬</button>
+        <div id="chatbot-window" class="hidden">
+        <div id="chatbot-header">
+            <span>TitanFuel AI Assistant</span>
+            <button id="close-chat">✖</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Type a message..." />
+            <button id="send-message">➤</button>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    </body>
+    </html>
